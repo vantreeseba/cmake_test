@@ -2,7 +2,10 @@
 # file(GLOB SOURCES "*.h")
 file(GLOB SOURCES "*.cpp")
 
-# Create library.
+# Create shared library.
+# add_library(hello_lib SHARED ${SOURCES})
+
+# Create static library.
 add_library(hello_lib ${SOURCES})
 
 # Make headers available to any project using this as a dep.
